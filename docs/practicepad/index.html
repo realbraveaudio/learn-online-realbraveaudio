@@ -1,14 +1,481 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>PracticePad — for studios & teachers</title>
-  <meta name="robots" content="noindex,follow" />
-  <link rel="canonical" href="https://teach.realbraveaudio.com/" />
-  <meta http-equiv="refresh" content="0; url=https://teach.realbraveaudio.com/" />
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Real Brave Virtual (powered by PracticePad) — 1-on-1 Online Music Program for Schools & Homeschool</title>
+<meta name="description" content="Live, online, 1-on-1 music lessons for homeschool programs, ESA groups, charter schools, and virtual schools—structured and tracked with PracticePad." />
+<link rel="canonical" href="https://learn-online.realbraveaudio.com/practicepad/" />
+<link rel="stylesheet" href="/assets/style.css" />
+<meta name="robots" content="index,follow" />
 </head>
 <body>
-  <p>This page is for studio owners and independent teachers. Redirecting to <a href="https://teach.realbraveaudio.com/">teach.realbraveaudio.com</a>…</p>
-</body>
-</html>
+<header class="rbHeader" role="banner">
+  <div class="rbNavWrap">
+    <a class="rbBrand" href="https://www.realbraveaudio.com/" aria-label="Real Brave Home">
+      <img class="rbLogo" src="https://d11n7da8rpqbjy.cloudfront.net/u328065/394911026real-brave-logo-music-school.png" alt="Real Brave Audio" loading="eager" decoding="async" />
+    </a>
+
+    <!-- Mobile toggle -->
+    <button class="rbMenuBtn" type="button" aria-expanded="false" aria-controls="rbNavPanel" onclick="document.documentElement.classList.toggle('rbNavOpen'); this.setAttribute('aria-expanded', document.documentElement.classList.contains('rbNavOpen') ? 'true' : 'false');">
+      <span class="rbBurger" aria-hidden="true"></span>
+      <span class="rbMenuText">Menu</span>
+    </button>
+
+    <nav class="rbNav" id="rbNavPanel" aria-label="Primary navigation">
+      <div class="rbLinks">
+        <details class="rbDrop">
+          <summary>Lessons</summary>
+          <div class="rbDropMenu" role="menu">
+            <a role="menuitem" href="https://www.realbraveaudio.com/locations-queens">Lessons in Queens, NY</a>
+            <a role="menuitem" href="https://www.realbraveaudio.com/locations-oakland">Lessons in Oakland, NJ</a>
+            <a role="menuitem" href="https://www.realbraveaudio.com/virtual-music-school-online-lessons">Online Lessons</a>
+          </div>
+        </details>
+
+        <a class="rbLink" href="https://www.realbraveaudio.com/about-real-brave">About</a>
+        <a class="rbLink" href="https://blog.realbraveaudio.com/">Blog</a>
+        <a class="rbLink" href="https://www.realbraveaudio.com/non-profit">Non Profit</a>
+        <a class="rbLink" href="https://www.realbraveaudio.com/contact-us">Contact</a>
+        <a class="rbLink" href="https://practicepad.realbraveaudio.com/">Log In</a>
+      </div>
+
+      <div class="rbActions">
+        <a class="rbBtn rbBtn--primary" href="https://bit.ly/danielpowersjr">Book a demo</a>
+      </div>
+    </nav>
+    <script>
+      (function(){
+        function isDesktop(){
+          return window.matchMedia && window.matchMedia('(min-width: 920px)').matches;
+        }
+        function wire(){
+          document.querySelectorAll('details.rbDrop').forEach(function(d){
+            d.addEventListener('mouseenter', function(){ if(isDesktop()) d.open = true; });
+            d.addEventListener('mouseleave', function(){ if(isDesktop()) d.open = false; });
+            d.addEventListener('focusout', function(e){
+              if(!isDesktop()) return;
+              // close when tabbing away
+              if(!d.contains(e.relatedTarget)) d.open = false;
+            });
+          });
+        }
+        if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', wire);
+        else wire();
+      })();
+    </script>
+  </div>
+</header>
+
+<main class="lp">
+
+<section class="hero hero--lp">
+  <div class="hero__content">
+    <p class="kicker"><span class="muted">Real Brave Audio presents</span></p>
+    <p class="kicker">Real Brave Virtual <span class="muted">(powered by PracticePad™)</span></p>
+    <h1>Live 1‑on‑1 online music lessons—built for schools and homeschool programs.</h1>
+    <p class="lead">A modern, structured program where every student works with a real teacher in real time. No pre‑recorded videos. No group classes. Just measurable progress.</p>
+
+    <ul class="checks">
+      <li>Built for partnerships: homeschool orgs, ESA groups, charter & virtual schools</li>
+      <li>Weekly or monthly lesson tiers (by program)</li>
+      <li>Custom practice plans + progress tracking inside PracticePad™</li>
+      <li>Clear outcomes parents and schools can see over time</li>
+    </ul>
+
+    <div class="actions">
+      <a class="btn btn--primary" href="https://bit.ly/danielpowersjr">Book a demo</a>
+      <a class="btn btn--ghost" href="#pricing">View pricing</a>
+    </div>
+
+    <p class="small note">Want to see what it looks like on your phone? This page is designed to be mobile‑first and scroll beautifully.</p>
+  </div>
+
+  <div class="hero__media">
+    <div class="device">
+      <div class="device__top">
+        <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+        <span class="device__title">PracticePad™ — Student Progress Dashboard</span>
+      </div>
+      <div class="device__body">
+        <div class="ui">
+          <div class="ui__row">
+            <div class="ui__card ui__card--big">
+              <div class="ui__label">This week’s focus</div>
+              <div class="ui__h">Clean transitions + steady tempo</div>
+              <div class="ui__p">Warm‑up → technique → song work, with clear targets.</div>
+              <div class="ui__chips"><span>10 min</span><span>15 min</span><span>20 min</span></div>
+            </div>
+            <div class="ui__card">
+              <div class="ui__label">Next lesson</div>
+              <div class="ui__h">Tuesday · 6:30pm</div>
+              <div class="ui__p">PracticePad video room link + notes inside</div>
+            </div>
+          </div>
+          <div class="ui__row">
+            <div class="ui__card">
+              <div class="ui__label">Goals</div>
+              <div class="ui__h">3 in progress</div>
+              <div class="ui__p">Milestones keep students motivated.</div>
+            </div>
+            <div class="ui__card">
+              <div class="ui__label">Teacher feedback</div>
+              <div class="ui__h">New notes posted</div>
+              <div class="ui__p">Exactly what to fix before next week.</div>
+            </div>
+            <div class="ui__card">
+              <div class="ui__label">Practice streak</div>
+              <div class="ui__h">4 days</div>
+              <div class="ui__p">Small wins → big progress.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="photoStrip gifStrip" aria-label="PracticePad feature demos">
+      <img class="gif" loading="lazy" alt="Lesson room demo" src="https://d11n7da8rpqbjy.cloudfront.net/u328065/319888811808Lesson_Room_Demo.gif" />
+      <img class="gif" loading="lazy" alt="Score animation demo" src="https://d11n7da8rpqbjy.cloudfront.net/u328065/732719957240Score_animation.gif" />
+      <img class="gif" loading="lazy" alt="Skill demo animation" src="https://d11n7da8rpqbjy.cloudfront.net/u328065/1030242587827Skill_Demo_Gif.gif" />
+    </div>
+
+    <p class="small mediaNote">Live product previews from PracticePad™ (GIFs).</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section__head">
+    <h2>Built for partnerships that need structure and measurable outcomes</h2>
+    <p class="muted">Real Brave Virtual is designed for organizations that want a premium, consistent program—not a loose collection of lessons.</p>
+  </div>
+
+  <div class="grid grid--3">
+    <div class="card card--pad"><h3>Homeschool programs</h3><p>A turnkey elective with clear weekly targets and visible progress.</p></div>
+    <div class="card card--pad"><h3>ESA‑focused groups</h3><p>A structured 1‑on‑1 program that families can stick with—supported by PracticePad™ tracking.</p></div>
+    <div class="card card--pad"><h3>Charter schools</h3><p>Consistent instruction with accountability and progress reporting over time.</p></div>
+    <div class="card card--pad"><h3>Virtual schools</h3><p>Live, real‑time instruction that integrates cleanly into remote learning.</p></div>
+    <div class="card card--pad"><h3>Parents love the clarity</h3><p>Practice plans and teacher feedback remove the guesswork between sessions.</p></div>
+    <div class="card card--pad"><h3>Students improve faster</h3><p>Because they’re not just given songs—they’re given a system.</p></div>
+  </div>
+
+  <div class="ctaRow">
+    <div class="ctaRow__box">
+      <div>
+        <h3>Want to partner with Real Brave?</h3>
+        <p class="muted">Book a demo and we’ll show you the hub, the method, and the program tiers.</p>
+      </div>
+      <a class="btn btn--primary" href="https://bit.ly/danielpowersjr">Book a demo</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="how-it-works">
+  <div class="section__head">
+    <h2>How it works</h2>
+    <p class="muted">Live instruction + a system that turns lessons into measurable progress.</p>
+  </div>
+
+  <ol class="steps">
+    <li><strong>Students meet live with a teacher (1‑on‑1).</strong> Every session is real time—no pre‑recorded videos, no passive learning.</li>
+    <li><strong>Lessons run weekly or monthly (by tier).</strong> We can structure the program around your organization’s needs.</li>
+    <li><strong>Teachers assign custom practice plans.</strong> Students always know what to practice next and how to improve.</li>
+    <li><strong>Progress is tracked inside PracticePad™.</strong> Teachers post guidance and milestones so parents and schools can see growth over time.</li>
+  </ol>
+
+  <div class="photoRow photoRow--compact" aria-label="Live 1-on-1 lesson photos">
+    <img loading="lazy" alt="Live 1-on-1 online lesson" src="https://d11n7da8rpqbjy.cloudfront.net/u328065/1493248238931Real_Brave_Online_Lessons.jpg" />
+    <img loading="lazy" alt="Live online lessons" src="https://d11n7da8rpqbjy.cloudfront.net/u328065/2856_1765974325hsNLive-online-lessons-2.jpg" />
+    <img loading="lazy" alt="Live online music lesson" src="https://d11n7da8rpqbjy.cloudfront.net/u328065/880276109357live-online-music-lessons.jpg" />
+  </div>
+  <p class="small photoRow__cap">Real Brave Virtual is <strong>live 1‑on‑1</strong>—students work with a real teacher in real time, every session.</p>
+
+  <div class="split">
+    <div class="card card--pad">
+      <h3>This creates</h3>
+      <p class="muted">Accountability, faster improvement, and measurable outcomes—without adding administrative chaos.</p>
+      <div class="pillRow"><span class="pill">Accountability</span><span class="pill">Faster improvement</span><span class="pill">Measurable outcomes</span></div>
+    </div>
+    <div class="card card--pad">
+      <h3>Instruments</h3>
+      <p class="muted">We support core high‑demand instruments for students nationwide.</p>
+      <div class="pillRow"><span class="pill">Guitar</span><span class="pill">Piano</span><span class="pill">Voice</span><span class="pill">Drums</span><span class="pill">Bass</span></div>
+      <p class="small">If you need a specific instrument for your program, ask—we’ll confirm availability.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="method">
+  <div class="section__head">
+    <h2>The Real Brave Method™ — how students actually improve</h2>
+    <p class="muted">Most music programs fail for one reason: they give students songs… but not a system. Our method is built for consistency and performance.</p>
+  </div>
+
+  <div class="grid grid--3">
+    <div class="card card--pad">
+      <h3>1) Discovery</h3>
+      <p class="muted">We start with what the student actually cares about—music they like, goals they want, and their current level. Engagement drives consistency.</p>
+      <p class="small">Outcome: faster early wins + higher retention.</p>
+    </div>
+    <div class="card card--pad">
+      <h3>2) Deconstruction</h3>
+      <p class="muted">We break songs, skills, and techniques into simple steps with clear weekly targets. PracticePad™ helps students see exactly what to practice.</p>
+      <p class="small">Outcome: no guessing, no overwhelm.</p>
+    </div>
+    <div class="card card--pad">
+      <h3>3) Development</h3>
+      <p class="muted">Learning isn’t the finish line—performance is. Students build toward full songs, confident playing, and real expression.</p>
+      <p class="small">Outcome: skill + confidence grow together.</p>
+    </div>
+  </div>
+
+  <div class="ctaRow">
+    <div class="ctaRow__box">
+      <div>
+        <h3>Want the program overview deck?</h3>
+        <p class="muted">Book a demo and we’ll walk your team through the method + how partnerships work.</p>
+      </div>
+      <a class="btn btn--primary" href="https://bit.ly/danielpowersjr">Book a demo</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="features">
+  <div class="section__head">
+    <h2>PracticePad™ — the system behind measurable outcomes</h2>
+    <p class="muted">This is what turns “lessons” into a program: structure, tracking, and clarity for students, parents, and partner organizations.</p>
+  </div>
+
+  <div class="featureSplit">
+    <div class="featureList">
+      <div class="feature">
+        <h3>Student dashboard</h3>
+        <p class="muted">See your next lesson, weekly goals, and focus areas at a glance.</p>
+      </div>
+      <div class="feature">
+        <h3>Practice plans</h3>
+        <p class="muted">Know exactly what to work on, how long, and what “good” looks like.</p>
+      </div>
+      <div class="feature">
+        <h3>Teacher feedback</h3>
+        <p class="muted">Clear notes after lessons so progress doesn’t disappear by next week.</p>
+      </div>
+      <div class="feature">
+        <h3>Progress tracking</h3>
+        <p class="muted">Milestones that keep students motivated and proud of their growth.</p>
+      </div>
+      <div class="feature">
+        <h3>Accountability</h3>
+        <p class="muted">Students always know what to do next, and teachers can reinforce progress week to week.</p>
+      </div>
+      <div class="feature">
+        <h3>Measurable milestones</h3>
+        <p class="muted">Progress is visible over time—great for families and partner organizations that want outcomes.</p>
+      </div>
+      <div class="feature">
+        <h3>Clear communication</h3>
+        <p class="muted">Teacher notes + practice plans keep everyone aligned between sessions.</p>
+      </div>
+      <div class="feature">
+        <h3>Program-ready structure</h3>
+        <p class="muted">Designed to support weekly or monthly tiers and large groups of students without losing quality.</p>
+      </div>
+    </div>
+
+    <figure class="rbShot">
+      <img loading="lazy" decoding="async" alt="PracticePad dashboard screenshot" src="https://d11n7da8rpqbjy.cloudfront.net/u328065/4082_17742983952M5practicepad.png" />
+      <figcaption class="small">PracticePad™ in action (full screenshot, no cropping).</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section" id="testimonials">
+  <div class="section__head">
+    <h2>Trusted By Families</h2>
+    <p class="muted">Partner programs get the same standard of instruction and care that families have loved for years. (Click to view the original Google review.)</p>
+  </div>
+
+  <div class="tGrid">
+    <article class="tCard">
+      <p class="tQuote">“I will highly recommend Real Brave Music School… I have been treated like family… each instructor …”</p>
+      <div class="tMeta">
+        <div><strong>Bennie Hill</strong></div>
+        <a class="tLink" href="https://www.google.com/maps/contrib/101774111222207148887/reviews?hl=en-US" target="_blank" rel="noopener">View on Google</a>
+      </div>
+    </article>
+
+    <article class="tCard">
+      <p class="tQuote">“My daughter Amelia has been attending for the past year… Piano lessons… Singing lessons… kind and patient… Very pleased, Absolutely recommend.”</p>
+      <div class="tMeta">
+        <div><strong>Melissa Yturbides Eustaquio</strong></div>
+        <a class="tLink" href="https://www.google.com/maps/contrib/111604532648622940474/reviews?hl=en-US" target="_blank" rel="noopener">View on Google</a>
+      </div>
+    </article>
+
+    <article class="tCard">
+      <p class="tQuote">“My daughter has been taking guitar lessons… since 2017… boosted her confidence immensely… staff… amazing, professional and very friendly!”</p>
+      <div class="tMeta">
+        <div><strong>Kim G</strong> <span class="muted">(Local Guide)</span></div>
+        <a class="tLink" href="https://www.google.com/maps/contrib/116223097984490876774/reviews?hl=en-US" target="_blank" rel="noopener">View on Google</a>
+      </div>
+    </article>
+
+    <article class="tCard">
+      <p class="tQuote">“Real Brave is not just a music school, it is a community… turns students into musicians!”</p>
+      <div class="tMeta">
+        <div><strong>Raphael Pinkhasov</strong></div>
+        <a class="tLink" href="https://www.google.com/maps/contrib/117442650274914518093/reviews?hl=en-US" target="_blank" rel="noopener">View on Google</a>
+      </div>
+    </article>
+
+    <article class="tCard">
+      <p class="tQuote">“I took piano lessons… for almost 2yrs and it was an amazing experience… affordable… comfy… everyone was super nice and helpful…”</p>
+      <div class="tMeta">
+        <div><strong>Saffeya H</strong> <span class="muted">(Local Guide)</span></div>
+        <a class="tLink" href="https://www.google.com/maps/contrib/117721912021134722028/reviews?hl=en-US" target="_blank" rel="noopener">View on Google</a>
+      </div>
+    </article>
+
+    <article class="tCard">
+      <p class="tQuote">“We have been using Real Brave for over two years… my four children and I love… helped my children grow… knowledgeable musicians who take time…”</p>
+      <div class="tMeta">
+        <div><strong>Shellie Mena</strong></div>
+        <a class="tLink" href="https://www.google.com/maps/contrib/115841084730719209992/reviews?hl=en-US" target="_blank" rel="noopener">View on Google</a>
+      </div>
+    </article>
+
+    <article class="tCard">
+      <p class="tQuote">“We love Real Brave… very talented instructors… gave… confidence and skill to play music and sing in front of an audience… professional, enthusiastic, and kind…”</p>
+      <div class="tMeta">
+        <div><strong>Corrin Manzo</strong></div>
+        <a class="tLink" href="https://www.google.com/maps/contrib/100218910771386519955/reviews?hl=en-US" target="_blank" rel="noopener">View on Google</a>
+      </div>
+    </article>
+
+    <article class="tCard">
+      <p class="tQuote">“I’ve been taking drum lessons… having a blast… excellent instructor and keeps it fun… love for playing drums has only grown…”</p>
+      <div class="tMeta">
+        <div><strong>John Hanley</strong></div>
+        <a class="tLink" href="https://www.google.com/maps/contrib/109170639924158647103/reviews?hl=en-US" target="_blank" rel="noopener">View on Google</a>
+      </div>
+    </article>
+
+    <article class="tCard">
+      <p class="tQuote">“We love this place… instructors are friendly, patient with kids, and very knowledgeable… My son discovered his love for several musical instruments…”</p>
+      <div class="tMeta">
+        <div><strong>Nicolette Fajardo</strong> <span class="muted">(Local Guide)</span></div>
+        <a class="tLink" href="https://www.google.com/maps/contrib/116243908707736423702/reviews?hl=en-US" target="_blank" rel="noopener">View on Google</a>
+      </div>
+    </article>
+
+    <article class="tCard">
+      <p class="tQuote">“Real Brave is an amazing place to learn… instructors are caring and provide a personalized experience… RB is so much more invested in the kids’ …”</p>
+      <div class="tMeta">
+        <div><strong>Alexandra Khorover</strong> <span class="muted">(Local Guide)</span></div>
+        <a class="tLink" href="https://www.google.com/maps/contrib/102464185497730330220/reviews?hl=en-US" target="_blank" rel="noopener">View on Google</a>
+      </div>
+    </article>
+  </div>
+
+  <div class="ctaRow">
+    <div class="ctaRow__box">
+      <div>
+        <h3>Want to explore a partnership?</h3>
+        <p class="muted">Book a demo and we’ll walk you through how Real Brave Virtual works for groups.</p>
+      </div>
+      <a class="btn btn--primary" href="https://bit.ly/danielpowersjr">Book a demo</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="pricing">
+  <div class="section__head">
+    <h2>Partnership tiers</h2>
+    <p class="muted">We offer weekly and monthly options depending on your organization’s needs. (Send your exact tiers/pricing and we’ll plug them in.)</p>
+  </div>
+
+  <div class="pricing">
+    <div class="priceCard">
+      <div class="priceCard__top">
+        <h3>Monthly</h3>
+        <p class="muted">Best for: enrichment + flexible schedules</p>
+        <div class="price">$__ / student</div>
+      </div>
+      <ul>
+        <li>__ lessons / month (1‑on‑1 live)</li>
+        <li>Custom practice plans inside PracticePad™</li>
+        <li>Progress tracking + teacher notes</li>
+        <li>Simple onboarding for families</li>
+      </ul>
+      <a class="btn btn--ghost" href="https://bit.ly/danielpowersjr">Book a demo</a>
+    </div>
+
+    <div class="priceCard priceCard--featured">
+      <div class="badge">Recommended</div>
+      <div class="priceCard__top">
+        <h3>Weekly</h3>
+        <p class="muted">Best for: consistent progress + measurable outcomes</p>
+        <div class="price">$__ / student</div>
+      </div>
+      <ul>
+        <li>__ lessons / month (1‑on‑1 live)</li>
+        <li>Everything in Monthly</li>
+        <li>Weekly targets + milestone tracking</li>
+        <li>Higher‑touch progress support</li>
+      </ul>
+      <a class="btn btn--primary" href="https://bit.ly/danielpowersjr">Book a demo</a>
+    </div>
+
+    <div class="priceCard">
+      <div class="priceCard__top">
+        <h3>Custom Program</h3>
+        <p class="muted">Best for: larger partner groups + special requirements</p>
+        <div class="price">Let’s scope</div>
+      </div>
+      <ul>
+        <li>Weekly or monthly structure</li>
+        <li>Instrument mix tailored to your students</li>
+        <li>Custom rollout + support</li>
+        <li>Program goals aligned to your model</li>
+      </ul>
+      <a class="btn btn--ghost" href="https://bit.ly/danielpowersjr">Book a demo</a>
+    </div>
+  </div>
+
+  <div class="faq">
+    <details class="faq__item"><summary>Is this live, real‑time instruction?</summary><p class="muted">Yes—every session is 1‑on‑1 with a real teacher, in real time. No pre‑recorded videos, no group classes.</p></details>
+    <details class="faq__item"><summary>How do you track progress?</summary><p class="muted">Teachers assign practice plans and milestones in PracticePad™ so progress is structured and visible over time.</p></details>
+    <details class="faq__item"><summary>What instruments do you support?</summary><p class="muted">Guitar, piano, voice, drums, and bass. Ask if you need additional instruments for a specific partnership.</p></details>
+    <details class="faq__item"><summary>What ages / levels do you serve?</summary><p class="muted">Beginners through advanced. We can tailor placement and goals based on your student population.</p></details>
+  </div>
+</section>
+
+<section class="section section--cta">
+  <div class="ctaFinal">
+    <div>
+      <h2>See Practice Pad in action</h2>
+      <p class="muted">Book a demo and we’ll walk you through the hub, the Real Brave Method™, and how partnerships work.</p>
+    </div>
+    <a class="btn btn--primary" href="https://bit.ly/danielpowersjr">Book a demo</a>
+  </div>
+</section>
+
+<hr />
+<footer class="footer">
+  <div class="footer__grid">
+    <div>
+      <div class="footer__brand">Real Brave Virtual</div>
+      <p class="muted">Live, online, 1‑on‑1 music program for schools, homeschool programs, and nationwide partners—powered by PracticePad™.</p>
+    </div>
+    <div>
+      <div class="footer__head">Links</div>
+      <a href="https://www.realbraveaudio.com">realbraveaudio.com</a><br />
+      <a href="/">Learn Online home</a><br />
+      <a href="#pricing">Pricing</a><br />
+      <a href="https://bit.ly/danielpowersjr">Book a demo</a>
+    </div>
+  </div>
+  <p class="small">© <span id="y"></span> Real Brave Audio. All rights reserved.</p>
+</footer>
+
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+
+</main>
+</body></html>
