@@ -22,25 +22,23 @@ header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.88);backdro
 .rbHeader{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.90);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
 .rbNavWrap{max-width:var(--max);margin:0 auto;display:flex;align-items:center;gap:14px;padding:10px 16px}
 .rbBrand{display:flex;align-items:center;text-decoration:none}
-.rbLogo{height:26px;width:auto;display:block}
+/* 3x bigger logo */
+.rbLogo{height:78px;width:auto;display:block}
 
-.rbMenu{margin-left:auto}
-.rbMenuBtn{list-style:none;display:flex;align-items:center;gap:10px;cursor:pointer;user-select:none;padding:8px 10px;border-radius:12px;border:1px solid var(--border);background:#fff;font-weight:900;color:var(--text)}
-.rbMenuBtn::-webkit-details-marker{display:none}
+.rbMenuBtn{margin-left:auto;display:flex;align-items:center;gap:10px;cursor:pointer;user-select:none;padding:10px 12px;border-radius:12px;border:1px solid var(--border);background:#fff;font-weight:950;color:var(--text)}
 .rbBurger{width:18px;height:12px;display:inline-block;background:linear-gradient(var(--text) 0 0) 0 0/100% 2px no-repeat, linear-gradient(var(--text) 0 0) 0 50%/100% 2px no-repeat, linear-gradient(var(--text) 0 0) 0 100%/100% 2px no-repeat;opacity:.9}
 .rbMenuText{font-size:13px;color:rgba(17,24,39,.80)}
 
-.rbNav{margin-top:10px}
-.rbNavCols{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px;border:1px solid var(--border);border-radius:16px;background:#fff;box-shadow:var(--shadow)}
+.rbNav{display:flex;align-items:center;gap:14px;margin-left:auto}
 .rbLinks{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
-.rbLink, .rbDrop > summary{padding:10px 12px;border-radius:12px;border:1px solid transparent;color:rgba(17,24,39,.78);text-decoration:none;font-weight:800}
+.rbLink, .rbDrop > summary{padding:10px 12px;border-radius:12px;border:1px solid transparent;color:rgba(17,24,39,.78);text-decoration:none;font-weight:900}
 .rbLink:hover, .rbDrop > summary:hover{background:rgba(17,24,39,.04)}
 
 .rbDrop{position:relative}
 .rbDrop > summary{cursor:pointer;list-style:none}
 .rbDrop > summary::-webkit-details-marker{display:none}
 .rbDropMenu{position:absolute;left:0;top:44px;min-width:240px;padding:8px;border-radius:14px;border:1px solid var(--border);background:#fff;box-shadow:var(--shadow)}
-.rbDropMenu a{display:block;padding:10px 12px;border-radius:12px;color:rgba(17,24,39,.82);text-decoration:none;font-weight:800}
+.rbDropMenu a{display:block;padding:10px 12px;border-radius:12px;color:rgba(17,24,39,.82);text-decoration:none;font-weight:900}
 .rbDropMenu a:hover{background:rgba(17,24,39,.04)}
 
 .rbActions{display:flex;align-items:center;gap:10px}
@@ -48,24 +46,20 @@ header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.88);backdro
 .rbBtn--primary{background:var(--brand);border-color:rgba(254,92,56,.38);color:#fff;box-shadow:0 16px 40px rgba(254,92,56,.18)}
 .rbBtn:hover{opacity:.94}
 
-/* Desktop: show menu inline (no hamburger) */
+/* Desktop */
 @media (min-width: 920px){
   .rbMenuBtn{display:none}
-  .rbMenu{display:block}
-  .rbMenu[open] .rbNav{margin-top:0}
-  .rbMenu .rbNav{margin-top:0}
-  .rbMenu .rbNavCols{padding:0;border:none;box-shadow:none}
-  .rbNavCols{justify-content:flex-end}
-  .rbDropMenu{top:46px}
+  .rbLogo{height:78px}
 }
 
-/* Mobile: full-width dropdown */
+/* Mobile: collapsed panel */
 @media (max-width: 919px){
-  .rbMenu{width:100%}
-  .rbNavCols{flex-direction:column;align-items:stretch}
-  .rbActions{justify-content:stretch}
+  .rbLogo{height:56px}
+  .rbNav{display:none;position:absolute;left:0;right:0;top:100%;margin:0;padding:14px 16px;border-bottom:1px solid var(--border);background:rgba(255,255,255,.97);backdrop-filter:blur(10px);flex-direction:column;align-items:stretch;gap:12px}
+  html.rbNavOpen .rbNav{display:flex}
   .rbActions .rbBtn{width:100%}
   .rbDropMenu{position:static;box-shadow:none;margin-top:8px}
+  .rbNavWrap{position:relative}
 }
 
 main{max-width:var(--max);margin:0 auto;padding:24px 16px 64px}
