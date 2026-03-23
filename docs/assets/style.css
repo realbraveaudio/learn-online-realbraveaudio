@@ -88,6 +88,15 @@ hr{border:none;border-top:1px solid var(--border);margin:22px 0}
 .gifStrip{margin-top:12px}
 .gif{width:100%;height:86px;object-fit:cover;border-radius:16px;border:1px solid rgba(17,24,39,.08);box-shadow:0 10px 30px rgba(17,24,39,.08);background:#fff}
 
+.photoRow{display:grid;grid-template-columns:repeat(3, minmax(0,1fr));gap:10px;margin-top:12px}
+.photoRow img{width:100%;height:140px;object-fit:cover;border-radius:16px;border:1px solid rgba(17,24,39,.08);box-shadow:0 12px 30px rgba(17,24,39,.10);background:#fff}
+.photoRow--compact img{height:110px}
+.photoRow__cap{margin-top:10px}
+@media (max-width: 920px){
+  .photoRow{grid-template-columns:1fr}
+  .photoRow img{height:160px}
+}
+
 .grid--3{grid-template-columns:repeat(3, minmax(0, 1fr))}
 .card--pad{padding:16px}
 
