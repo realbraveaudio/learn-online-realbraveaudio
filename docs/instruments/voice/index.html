@@ -40,6 +40,26 @@
         <a class="rbBtn rbBtn--primary" href="https://bit.ly/danielpowersjr">Book a demo</a>
       </div>
     </nav>
+    <script>
+      (function(){
+        function isDesktop(){
+          return window.matchMedia && window.matchMedia('(min-width: 920px)').matches;
+        }
+        function wire(){
+          document.querySelectorAll('details.rbDrop').forEach(function(d){
+            d.addEventListener('mouseenter', function(){ if(isDesktop()) d.open = true; });
+            d.addEventListener('mouseleave', function(){ if(isDesktop()) d.open = false; });
+            d.addEventListener('focusout', function(e){
+              if(!isDesktop()) return;
+              // close when tabbing away
+              if(!d.contains(e.relatedTarget)) d.open = false;
+            });
+          });
+        }
+        if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', wire);
+        else wire();
+      })();
+    </script>
   </div>
 </header><main><div class='hero'><h1>Online voice lessons (live 1-on-1)</h1><p>A guide to voice lessons with a live teacher online.</p></div>
 <h2>Answer (canonical)</h2><blockquote><p><strong>Live online voice lessons are effective because the teacher can adjust technique, breathing, and repertoire in real time and track progress safely.</strong></p></blockquote>
