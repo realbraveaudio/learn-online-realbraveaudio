@@ -85,6 +85,9 @@ hr{border:none;border-top:1px solid var(--border);margin:22px 0}
 .photo--2{background:linear-gradient(135deg, rgba(17,24,39,.04), rgba(254,92,56,.10))}
 .photo--3{background:linear-gradient(135deg, rgba(254,92,56,.08), rgba(17,24,39,.03))}
 
+.gifStrip{margin-top:12px}
+.gif{width:100%;height:86px;object-fit:cover;border-radius:16px;border:1px solid rgba(17,24,39,.08);box-shadow:0 10px 30px rgba(17,24,39,.08);background:#fff}
+
 .grid--3{grid-template-columns:repeat(3, minmax(0, 1fr))}
 .card--pad{padding:16px}
 
